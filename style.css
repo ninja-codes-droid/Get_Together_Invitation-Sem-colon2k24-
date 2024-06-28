@@ -142,10 +142,10 @@
     } */
 
     .envelope > .letter > .text {
-        font-size: 12px;
+        font-size: 10px;
     }
-    .heart:before {
-        top: -3px;
+      .heart:before {
+        top: -7.5px;
       }
 
     /* .heart {
