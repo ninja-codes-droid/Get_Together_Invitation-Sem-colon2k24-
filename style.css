@@ -144,9 +144,9 @@
     .envelope > .letter > .text {
         font-size: 9px;
     }
-      .heart:before {
+      /* .heart:before {
         top: -7.5px;
-      } 
+      }  */
 
     /* .heart {
         width: 10px;
