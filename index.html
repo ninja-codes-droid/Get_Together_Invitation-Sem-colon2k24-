@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong><u id="person-name">Dear Person.</u></strong>
+                        <p>We are pleased to invite you to join us,<br>
+                            on <b>1st july 2024, 1:00 pm</b><br>
+                            for <b>Sem;colon 2k24</b><br>
+                            At room <b>206</b>,<br>
+                            <b>University of Calcutta, Technology Campus.</b></p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dress Code: <b>Indo-western</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+   const classRoll = {
+            "1": "NISHA MISHRA",
+            "01": "NISHA MISHRA",
+            "2": "ANKITA MONDAL",
+            "02": "ANKITA MONDAL",
+            "3": "RONGIT MUKHERJEE",
+            "03": "RONGIT MUKHERJEE",
+            "4": "RIYA GHOSH",
+            "04": "RIYA GHOSH",
+            "7": "SUDIPTO CHATTERJEE",
+            "07": "SUDIPTO CHATTERJEE",
+            "8": "SWASTIKA GHOSH",
+            "08": "SWASTIKA GHOSH",
+            "9": "SONIYA SHIL",
+            "09": "SONIYA SHIL",
+            "10": "SNEHASREE MISTRY",
+            "11": "NAMRATA KAR",
+            "12": "DIMPI GUPTA",
+            "13": "BUDHADITYA SARKAR",
+            "15": "SAMPURNA BHATTACHARYA",
+            "16": "ANINDITA BISWAS",
+            "17": "SAHELI PATRA",
+            "18": "SUKANYA SAHA",
+            "21": "BILAS DAS",
+            "22": "ARPAN GOSWAMI",
+            "23": "SRITAMA MONDAL",
+            "25": "SOUMIK BHOWMICK",
+            "26": "AKHLAKH AHMED REJA",
+            "28": "SHATARUPA DAS",
+            "29": "ARPAN NASKAR",
+            "30": "NIRUPAM MONDAL",
+            "31": "SUBHANDU GHOSH",
+            "32": "PRASANTA JANA",
+            "34": "RICHIK MALLICK",
+            "35": "ANURAN BHATTACHARYA",
+            "36": "SAYAN CHATTERJEE",
+            "37": "SOUMIK DEY"
+        };
+
+        const rollNumberInput = prompt("Enter your class roll number for the last time:");
+        const rollNumber = rollNumberInput.replace(/^0+/, ''); // Remove leading zeros
+        const personNameElement = document.getElementById("person-name");
+
+        if (classRoll[rollNumber]) {
+            personNameElement.textContent = `Dear ${classRoll[rollNumberInput]}.`;
+            
+        } else {
+            alert("majak mat karo yaar");
+            location.reload();
+        }
+
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
