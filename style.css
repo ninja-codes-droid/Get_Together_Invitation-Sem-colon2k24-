@@ -115,3 +115,44 @@
     transform: rotate(90deg);
     transition-delay: 0.4s;
   }
+  @media (max-width: 600px) {
+    /* .envelope-wrapper > .envelope {
+        width: 150px;
+        height: 115px;
+    }
+
+    .envelope-wrapper > .envelope::before {
+        border-top: 80px solid var(--envelope-tab);
+        border-right: 80px solid transparent;
+        border-left: 80px solid transparent;
+    }
+
+    .envelope-wrapper > .envelope::after {
+        border-top: 80px solid transparent;
+        border-right: 80px solid var(--envelope-cover);
+        border-bottom: 50px solid var(--envelope-cover);
+        border-left: 80px solid var(--envelope-cover);
+    }
+
+    .envelope > .letter {
+        right: 10%;
+        width: 80%;
+        height: 60%;
+        padding: 10px 5px;
+    } */
+
+    .envelope > .letter > .text {
+        font-size: 6px;
+    }
+
+    /* .heart {
+        width: 10px;
+        height: 10px;
+    }
+
+    .heart:before, 
+    .heart:after {
+        width: 10px;
+        height: 10px;
+    } */
+}
