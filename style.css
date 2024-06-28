@@ -142,8 +142,11 @@
     } */
 
     .envelope > .letter > .text {
-        font-size: 6px;
+        font-size: 7px;
     }
+    .heart:before {
+        top: -5.5px;
+      }
 
     /* .heart {
         width: 10px;
