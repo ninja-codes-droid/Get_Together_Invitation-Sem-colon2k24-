@@ -142,21 +142,15 @@
     } */
 
     .envelope > .letter > .text {
-        font-size: 10px;
+        font-size: 9px;
     }
-      /* .heart:before {
+      .heart:before {
         top: -7.5px;
-      } */
+      } 
 
     /* .heart {
         width: 10px;
         height: 10px;
     }
 */
-    .heart:before, 
-    .heart:after {
-        width: 10px;
-        height: 10px;
-        top : 10px;
-    } 
 }
